@@ -1,0 +1,51 @@
+/* 여기에 스타일을 구현해 주세요 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.container {
+  padding: 100px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.profile {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.profile img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white
+}
+
+.status {
+  position: absolute;
+  bottom: -3px;
+  right: -4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.online {
+  background-color: #4cfe88;
+}
+
+.offline {
+  background-color: #dbdbdb;
+}
