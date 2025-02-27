@@ -25,6 +25,48 @@
     <link rel="stylesheet" href="./styles/login.css" />
   </head>
   <body>
-    <img class="logo" src="./figma/naver.svg" alt="네이버 로고" />
+    <div class="logo-box">
+      <img class="logo" src="./figma/naver.svg" alt="네이버 로고" />
+    </div>
+    <div class="form-box">
+      <form className="checkForm">
+        <input class="id" type="text" required placeholder="아이디(이메일)" />
+        <input
+          class="password"
+          type="password"
+          required
+          placeholder="비밀번호"
+        />
+        <button class="button">로그인</button>
+
+        <div class="checkbox-container">
+          <div class="container-box"><input type="checkbox" id="checkbox" /><label for="checkbox"></label
+            >로그인 상태유지</div>
+          <div class="a-link">
+            <a href="./pages/ip_security.html" target="_blank">ip 보안 off</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- 필수입력 서식알수있는방법 가상요소 ::after or ::before
+     데스크탑일때 ip보안 텍스트 클릭시 링크 새창에서 열리는거 구현
+     로그인 상태 유지와 ip보안 on/off ui는 마우스 이외에 키보드로 조각 가능하도록  
+     미디어 쿼리 사용해서서화면 반응형으로 768px 미만은 모바일 768px 이상은 데스크탑으로
+     포커스 스타일을 기본색상이 아닌 커스텀 스타일로 변경할것 (색상 #24388d)
+     모바일 환경에서 ip보안 on/off 스위치는 사용자에게 안보이게
+     데스크탑에서 로그인폼 가로크기는 500px 좌우여백 20px 포함 안의 역이 460px이 되야하니까 padding을 사용하자
+
+     입력 서식 글자크기 및 세로 크기, 테두리 선 색상, 배경 색상은 다음과 같이 지정할 것
+    `포커스 상태` : #03cf5d, #e9f0fd
+    로그인 상태 유지 및 IP 보안 ON/OFF `스위치 UI` 영역의 위쪽 여백은 10px로 지정할 것
+    로그인 상태유지 체크박스 배경 이미지 및 크기와 여백은 다음과 같이 지정할 것
+    `선택안함` : unchecked.svg (제공한 <svg> 코드를 활용하여 이미지로 저장하여 사용)
+    `선택함` : checked.svg (제공한 <svg> 코드를 활용하여 이미지로 저장하여 사용)
+    가로 * 세로 : 24px * 24px
+    배경 이미지 오른쪽 여백 : 5px
+   `IP 보안` 스위치의 글자 크기는 16px, 글자 색상은 #121212로 지정할 것
+
+     -->
   </body>
 </html>
