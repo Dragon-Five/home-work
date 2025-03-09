@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -6,11 +6,109 @@
     <title>Apple Card Layout</title>
     <link rel="icon" href="./favicon/apple-favicon.svg" />
     <link rel="apple-touch-icon" href="./favicon/apple-favicon.svg" />
-    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/apple.css" />
   </head>
   <body>
     <!-- 카드 레이아웃 -->
+    <!-- **`CSS Grid`**를 사용하여 **반응형 레이아웃**을 구현해주세요.
 
+    - 중단점(breakpoint)은 **`1024px`**  
+    (Small Screen - 1024px 이하 / Large Screen - 1024px 이상)
+    - Apple 제폼 이미지는 <img> 요소가 아닌 CSS의 `background 속성`을 활용하여 구현.
+    이 때 디바이스의 `픽셀 밀도`에 따라 1배율 또는 2배율 이미지가 배경으로 반영되도록 구현.
+    - **`theme.css`** 파일에 제공 된 값(색상, 텍스트 크기, 여백 등)을 사용하여 구현.
+    <div> -->
+
+    <div class="container1">
+      <div class="text-container">
+        <p class="ipadTitle">iPad Pro</p>
+        <p class="ipadText">
+          놀라우리만치 얇다. <br />
+          엄청나게 강력하다.
+        </p>
+        <p class="ipadRelease">출시일 추후 공개</p>
+        <div class="ipadButton">
+          <a class="ipadLink1">더 알아보기</a>
+          <a class="ipadLink2">가격보기</a>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="text-container">
+        <p class="ipadAirTitle">iPad air</p>
+        <p class="ipadAirText">
+          두 가지 사이즈. 더 빠른 칩. <br />
+          무엇이든 거뜬하게.
+        </p>
+        <p class="ipadAirRelease">출시일 추후 공개</p>
+        <div class="ipadAirButton">
+          <a class="ipadAirLink1">더 알아보기</a>
+          <a class="ipadAirLink2">가격보기</a>
+        </div>
+      </div>
+    </div>
+    <div class="container3">
+      <div class="text-container">
+        <p class="iphone15ProTitle">iPhone 15 Pro</p>
+        <p class="iphone15ProText">티타늄. 초강력. 초경량. 초프로</p>
+        <div class="iphone15ProButton25">
+          <a class="iphone15ProLink1">더 알아보기</a>
+          <a class="iphone15ProLink2">가격보기</a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="container4">
+        <div class="text-container">
+          <p class="iphone15Title">iPhone 15</p>
+          <p class="iphone15Text">
+            새로운 카메라. <br />
+            새로운 디자인. <br />
+            새로움이 물씬.
+          </p>
+          <div class="iphone15Button25">
+            <a class="iphone15Link1">더 알아보기</a>
+            <a class="iphone15Link2">가격보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="container5">
+        <div class="text-container">
+          <p class="appleWatchTitle">WATCH</p>
+          <p class="appleWatchText">보다 똑똑. 보다 또렷. 보다 강력.</p>
+          <div class="appleWatchButton25">
+            <a class="appleWatchLink1">더 알아보기</a>
+            <a class="appleWatchLink2">가격보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="container6">
+        <div class="text-container">
+          <p class="macBookAirTitle">MacBook Air</p>
+          <p class="macBookAirText">날렵하게. 강력하게. M3답게.</p>
+          <div class="macBookAirButton25">
+            <a class="macBookAirLink1">더 알아보기</a>
+            <a class="macBookAirLink2">가격보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="container7">
+        <div class="text-container">
+          <p class="airPodsProTitle">airPods Pro</p>
+          <p class="airPodsProText">
+            전에 없던 청취 경험. <br />
+            적응형 오디오.
+          </p>
+          <div class="airPodsProButton25">
+            <a class="airPodsProLink1">더 알아보기</a>
+            <a class="airPodsProLink2">가격보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
